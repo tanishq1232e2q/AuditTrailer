@@ -8,7 +8,7 @@ function App() {
   
   const fetchVersions = async () => {
       try {
-          const res = await axios.get('http://localhost:5000/versions');
+          const res = await axios.get('https://audittrailer.onrender.com/versions');
           setVersions(res.data);
         } catch (err) {
             console.error('Fetch error:', err);
@@ -21,7 +21,7 @@ function App() {
     }, []);
   const handleSave = async () => {
     try {
-      await axios.post('http://localhost:5000/saveversion', { text });
+      await axios.post('https://audittrailer.onrender.com/saveversion', { text });
       fetchVersions(); // Refresh history
       alert('Version saved!');
     } catch (err) {
