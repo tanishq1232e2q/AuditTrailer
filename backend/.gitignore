@@ -1,0 +1,21 @@
+# Environment variables
+.env
+.env.local
+
+# Dependency directories
+node_modules/
+vendor/
+
+# Log files
+*.log
+logs/
+
+# Build artifacts
+dist/
+build/
+tmp/
+
+# Editor/IDE specific files
+.vscode/
+.idea/
+*.swp
